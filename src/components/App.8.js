@@ -10,12 +10,13 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-        {
-          this.state.flag ? <h1>如果为真我就显示</h1> : <h1>如果为假我就显示</h1>
+      {
+        if (this.state.flag) {
+          <h1>如果为真我就显示</h1>
+        } else {
+          <h1>如果为假我就显示</h1>
         }
-      </div>
-      
+      }
     )
   }
 }
